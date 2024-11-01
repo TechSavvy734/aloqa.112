@@ -1,0 +1,72 @@
+
+/* Асосий тана дизайни */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Анимациялар */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#features, #testimonials {
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Ҳедер ва навигация */
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Асосий қисм ва бўлимлар */
+main {
+    padding: 20px;
+}
+
+#features .col-md-4 {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Медиақоидалар */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
